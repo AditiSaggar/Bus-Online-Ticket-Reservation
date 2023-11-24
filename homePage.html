@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/homePage.css">
+    <title>HomePage</title>
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-light bg-light">
+        
+        <!-- logo -->
+        <img src="./assets/images/logo.webp" alt="logo" class="logo">
+      <!-- nav-content -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a> 
+            <a href="#">Service</a>
+          <form class="d-flex m-2">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+    </nav>
+    
+      <!-- booking-potal -->
+        <div class="form">
+            <h1 class="text text-center">Bus Booking in India</h1>
+            <p class="text text-center">Book bus tickets online, check bus time table, bus ticket prices, select SRTC &amp; Volvo AC Sleeper bus services and avail bus ticket offers.</p>
+              
+            <form onsubmit="return searchBuses()" action="">
+                <div class="textArea">
+                    <h2 class="text text-center">Search For Bus Tickets</h2>
+                </div>
+
+                <div class="select-btn">
+                    <select name="Departute" id="departure">
+                        <option value="">Departure</option>
+                        <option value="">Shimla</option>
+                        <option value="">Manali</option>
+                        <option value="">Goa</option>
+                        <option value="">Jaipur</option>
+                        <option value="">Delhi</option>
+                        <option value="">Solang</option>
+                        <option value="">Vrindavan</option>
+                        <option value="">Kerela</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Bihar</option>
+                    </select>
+                    <p id="dept_val"></p>
+                    <div class="select-btn">
+                        <select name="Destination" id="destination">
+                            <option value="">Destination</option>
+                            <option value="">Shimla</option>
+                            <option value="">Manali</option>
+                            <option value="">Goa</option>
+                            <option value="">Jaipur</option>
+                            <option value="">Delhi</option>
+                            <option value="">Solang</option>
+                            <option value="">Vrindavan</option>
+                            <option value="">Kerela</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Bihar</option>
+                        </select>
+                        <p id="dest_val"></p>
+                    </div> 
+                </div> 
+               
+                <div class="select-btn"> 
+                        <input  type="date" id="date">
+                </div>
+                <p class="text text-danger m-2" id="date_val"></p>
+                <div>
+                    <input type="submit" value="Search Buses" class="btn btn-warning">
+                </div>
+                
+            </from>
+        </div>
+        
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/homescript.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus App</title>
+    <link rel="stylesheet" href="./assets/css/all.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/loginPage.css">
+    <link rel="icon" href="./assets/images/logo.favicon" type="images/jpg">
+    
+</head>
+<body>
+      
+    <div class="container">
+      <div class="form">
+          <h1>User Login</h1> 
+          <p>Doesn't have an account yet ? <a href="#" style="color:rgb(30, 107, 183)"><strong>Sign Up</strong></a></p>    
+          <hr>       
+          <form onsubmit= "return validateForm()">
+              <div class="field email">
+                  <div class="input-area">
+                      <input type="text" placeholder="Email" id="email">
+                      <i class="icon fa-solid fa-envelope"></i>
+                      
+                    </div>
+                    <p id="email_error"></p>
+              </div>
+              <div class="field password">
+                  <div class="input-area">
+                      <input type="password" placeholder="Password" id="password">
+                      <i class="icon fa-solid fa-lock"></i>
+                  </div>
+                  <p id="password_error"></p>
+              </div>
+              <p>By creating an account you agree to our <a href="#" style="color:rgb(30, 107, 183)">Terms & Privacy</a>.</p>
+            
+              <!-- <input type="submit" value="Login" >
+              <input type="submit" value="Register"> -->
+              <div class="loginPage">
+                <button type="submit" class="Loginbtn" >Login</button>
+                <a href="./registrationForm.html"type="submit" class="Regbtn" id="register">Register</a>
+              </div>
+         
+          </form>
+      </div>
+  </div>
+
+  <script src="./assets/js/loginscript.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+   
+    
+</body>
+</html>

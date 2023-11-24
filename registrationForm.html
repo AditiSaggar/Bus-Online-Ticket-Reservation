@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/registrationForm.css">
+    
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form" >
+                      
+            <form onclick ="validateForm()" action="">
+                <h1>New Registration</h1>  
+                <div class="field fname">
+                    <div class="input-area">
+                        <input type="text" placeholder="First Name" id="fname">
+                        <i class=" icon fa-solid fa-user"></i>     
+                    </div>
+                    <p id="fname_val"></p>
+                    
+                </div>
+                <div class="field lname">
+                    <div class="input-area">
+                        <input type="text" placeholder="Last Name" >
+                        <i class="icon fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="field email">
+                    <div class="input-area">
+                        <input type="text" placeholder="Email" id="regEmail">
+                        <i class="icon fa-solid fa-envelope"></i>
+                    </div>
+                    <p id="email_val"></p>
+                </div>
+                <div class="field password">
+                    <div class="input-area">
+                        <input type="text" placeholder="Password" id="password">
+                        <i class="icon fa-solid fa-lock"></i>
+                    </div>
+                    <p id="pwd_Val"></p>
+                </div>
+                <div class="field password">
+                    <div class="input-area">
+                        <input type="text1" placeholder=" Confirm Password" id="confirmPassword">
+                        <i class="icon fa-solid fa-lock"></i>
+                    </div>
+                    <p id="conPwd_val"></p>
+                </div>
+                <div class="field contact">
+                    <div class="input-area">
+                        <input type="number" placeholder="Phone Number">
+                        <i class="icon fa-solid fa-phone"></i>
+
+                    </div>
+                </div>
+
+                <!-- <div class="radio_btn">
+                    <input type="radio" name="r1" id="male" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" name="r1" id="female">
+                    <label for="female">Female</label>
+                </div> -->
+
+                <!-- <div class="select-btn">
+                    <select name="States">
+                        <option value="">Select State</option>
+                        <option value="">Himachal Pradesh</option>
+                        <option value="">Punjab</option>
+                        <option value="">UP</option>
+                        <option value="">Goa</option>
+                        <option value="">Kerala</option>
+                    </select>
+                </div> -->
+
+                <div class="select-btn">
+                    <select name="Gender">
+                        <option value=""> Gender</option>
+                        <option value=""> Male</option>
+                        <option value=""> Female</option>
+                    </select>
+                </div>
+
+                <button type="submitA" value="Submit" class="Loginbtn btn btn-success" >Submit</button>
+                <a href="./loginPage.html" type= "Back" class="Regbtn btn btn-danger">Back To Login</a>
+                
+                
+            </from>
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <scrip src="./assets/js/regscript.js"></script>
+    <script></script>
+</body>
+</html>
