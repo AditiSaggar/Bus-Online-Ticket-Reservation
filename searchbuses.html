@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <metat" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/all.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/searchBuses.css">
@@ -11,63 +11,140 @@
 <body>
     
     <div class="container">
-        <div class="form">
-            <h1>Search Buses</h1>   
-
-            <form = "action">
+        <div class="form  ">
+            <form = "action" class="">
                <table class="table table-active table-bordered table-hover" >
-                <thead>
-                    <tr>
+                <thead style="font-size: 20px;">
+                
+                    <h1>Search Buses</h1>   
+                    <tr style="background-color:rgb(10, 86, 51);color:white;">  
+                        <th>S.No.</th>
                         <th>Title</th>
                         <th>Departure</th>
                         <th>Destination</th>
-                        <th>Date</th>
                         <th>Price</th>
-                        <th>Type</th>
+                        <th>Bus Types</th>
+                        <th>Actions</th>
                     </tr>
+                </thead>
+                <tbody >
                     <tr>
+                        <td>1</td>
                         <td>Shree Hare Rama Travel</td>
-                        <td>Departure</td>
-                        <td>Destination</td>
-                        <td>Date</td>
                         <td></td>
-                        <td>A/C Seater/Sleeper</td>
+                        <td></td>
+                        <td>500/psn</td>
+                        <td>
+                                    <select class="form-select form-select-s">
+                                        <option selected hidden>Type</option>
+                                        <option value="AC">AC</option>
+                                        <option value="Non-AC">Non-AC</option>
+                                       
+                                    </select>
+                        </td>
+                        <td>
+                            <!-- <button class="btn btn-danger click">Select</button> -->
+                            <div class="confirm">
+                                <button class="btn btn-danger btn-sm" onclick="bookSeats()"><a href="./chooseSeat.html">Select Seats</a></button>
+                               </div>
+                        </td>
+                        
+              
                     </tr>
                     <tr>
-                        <td>Samay Shatabdi Travel Pvt Ltd</td>
-                        <td>Departure</td>
-                        <td>Destination</td>
-                        <td>Date</td>
+                        <td>2</td>
+                        <td>Samay Shatabdi Travel Pvt Ltd</b></td>
                         <td></td>
-                        <td>A/C Seater/Sleeper</td>
+                        <td></td>
+                        <td>500/psn</td>
+                        <td>
+                                    <select class="form-select form-select-s">
+                                        <option selected hidden>Type</option>
+                                        <option value="AC">AC</option>
+                                        <option value="Non-AC">Non-AC</option>
+                                       
+                                    </select>
+                           
+                        </td>
+                        <td>
+                            <!-- <button class="btn btn-danger click">Select</button> -->
+                                <button class="btn btn-danger btn-sm" onclick="bookSeats()"><a href="./chooseSeat.html">Select Seats</a></button>
+                        </td>
                     </tr>
                     <tr>
+                        <td>3</td>
                         <td>Raj Travel Pvt Ltd</td>
-                        <td>Departure</td>
-                        <td>Destination</td>
-                        <td>Date</td>
                         <td></td>
-                        <td>A/C Seater/Sleeper</td>
+                        <td></td>
+                        <td>500/psn</td>
+                        <td>
+                            <select class="form-select form-select-s">
+                                  <option selected>Type</option>
+                                 <option value="AC">AC</option>
+                                 <option value="Non-AC">Non-AC</option>
+                                       
+                           </select>
+                        </td>
+                        <td>
+                            <!-- <button class="btn btn-danger click">Select</button> -->
+                                <button class="btn btn-danger btn-sm" onclick="bookSeats()"><a href="./chooseSeat.html">Select Seats</a></button>
+                        </td>
+
                     </tr>
                     <tr>
-                        <td>IntrCity SmartBus</td>
-                        <td>Departure</td>
-                        <td>Destination</td>
-                        <td>Date</td>
+                        <td>4</td>
+                        <td>IntrBus Type SmartBus</td>
                         <td></td>
-                        <td>A/C Seater/Sleeper</td>
+                        <td></td>
+                        <td>500/psn</td>
+                        <td>
+                           
+                          <select class="form-select form-select-s">
+                               <option selected>Type</option>
+                              <option value="AC">AC</option>
+                              <option value="Non-AC">Non-AC</option>
+                                
+                          </select>
+                               
+                        </td>
+                        <td>
+                            <!-- <button class="btn btn-danger click">Select</button> -->
+                                <button class="btn btn-danger btn-sm" onclick="bookSeats()"><a href="./chooseSeat.html">Select Seats</a></button>
+                            
+                            </td>
                     </tr>
                     <tr>
+                        <td>5</td>
                         <td>Shatabdi Travel</td>
-                        <td>Departure</td>
-                        <td>Destination</td>
-                        <td>Date</td>
                         <td></td>
-                        <td>A/C Seater/Sleeper</td>
+                        <td></td>
+                        <td>500/psn</td>
+                        <td>
+                               
+                            <select class="form-select form-select-s">
+                                <option selected>Type</option>
+                                <option value="AC">AC</option>
+                                <option value="Non-AC">Non-AC</option>
+                            </select>
+                               
+                        </td>
+                        <td>
+                            <!-- <button class="btn btn-danger click">Select</button> -->
+                           
+                                <button class="btn btn-danger btn-sm " onclick="bookSeats()"><a href="./chooseSeat.html">Select Seats</a></button>
+                               
+                            </td>
+                        
                     </tr>
 
-                </thead>
+                </tbody>
+                
                </table>
+
+               <!-- <div class="confirm">
+                <button class="btn btn-success btn-lg" onclick="bookSeats()"><a href="./chooseSeat.html">Confirm Seats</a></button>
+               </div> -->
+              
             </form>
         </div>
     </div>

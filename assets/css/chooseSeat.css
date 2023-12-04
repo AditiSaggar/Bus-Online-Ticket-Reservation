@@ -22,8 +22,7 @@ body{
     border-radius: 10px; 
     padding: 30px 30px 30px 30px;
     box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.2);
-    position: absolute;
-    
+    position: absolute; 
 }
 
 .form h1 {
@@ -53,41 +52,52 @@ body{
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
+ list-style: none;
+} 
+
  .seat {
     display: flex;
     margin-right: 10px;
     padding:5px;
     position:relative;
+}
 
-}
-  
-.seat input[type="radio"] {
-    display: none;
-}
- .seat label {
+ .seats label {
     border-radius: 10px;
     background: rgb(28, 28, 109);
     color:white;
     width:50px;
     height:50px;
     text-align: center;
-    line-height: 40px;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
-    padding: 2px;
+    padding: 12px;
+    margin: 5px;
 }
-/* .seat input[type="radio"]:checked + label {
-    background-color: #007bff;
-    color: #fff;
-}
-   */
 
 .seatCenter {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
-button{
-margin-left: 15px;
+
+button a{
+    /* list-style: none; */
+    text-decoration: none;
+    color:white;
+    width:100%
+} 
+a:hover{
+    color:rgb(255, 247, 0);
+}
+  
+input[type="checkbox"] {
+    display: none;
+}
+  
+
+ input[type="checkbox"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
   }
+   
   
   

@@ -32,7 +32,6 @@ body{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 40px;
-    /* color:#fff */
 }
 
 
@@ -78,25 +77,6 @@ form .field .icon{
  
 }
 
-form .radio_btn{
-display: flex;
-flex-direction: row;
-font-size: 18px;
-font-weight: 400;
-}
-
-
-form input[type="radio"]{
-    width: 20px;
-    height: 20px;
-    margin: 5px 10px;
-}
-
-
-form .select-btn{
-    margin-top:20px;
-}
-
 form select{
     height:50px;
     width:100%;
@@ -127,28 +107,36 @@ form a[type="Back"]{
 button {
     color: white;
     height:50px;
-    /* width:100%; */
-    padding: 14px 20px;
-    /* margin: 8px 0; */
+    margin: 40px 0; 
     border: none;
     font-size: 18px;
     width: 100%;
     border-radius: 8px;    
 } 
-a{
-    color: white;
-    height:50px;
-    padding: 14px 20px;
-    /* margin: px 0; */
-    border: none;
-    font-size: 18px;
-    width: 100%;
-    border-radius: 8px;    
-}
 
+
+button a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
   
 .Regbtn, .Loginbtn {
     float: left;
     width:50%;
 }
 
+form p{
+    color:#fa3426;
+    text-align:left;
+    margin-left:10px; 
+    font-size:17px; 
+}
+
+.Regbtn a:hover{
+    color:yellow;
+} 
+
+.Loginbtn:hover{
+    color:yellow;
+}

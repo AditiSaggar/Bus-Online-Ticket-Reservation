@@ -17,10 +17,10 @@ body{
     left:50%;
     transform: translate(-50%, -50%);
     width: 900px;
-    background-color: rgba(240, 248, 255, 0.728); 
+    background-color: rgba(240, 248, 255, 0.8); 
     border-radius: 10px;
     text-align: center;
-    padding: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
     box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.2);
     
 }
@@ -29,6 +29,20 @@ body{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 40px;
+    /* background-color: rgb(245, 169, 29); */
 }
 
 
+/* form button{
+    width:100%;
+    padding:15px;
+      
+} */
+form button a{
+    text-decoration: none;
+    color:white;
+}
+
+form a:hover{
+    color: yellow;
+}

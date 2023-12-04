@@ -31,7 +31,7 @@ body{
     /* font-size: 30px; */
     font-weight: 600;
     margin-bottom: 40px;
-    /* color:#fff */
+   
 }
 
 .form p{
@@ -50,8 +50,6 @@ form .field .input-area{
 form input{
      height: 50px;
     width: 100%;
-    /* outline: none;  */
-    /* padding: 0 15px; */
     padding-left: 40px;
     font-size:18px;
     border-radius: 8px;
@@ -69,7 +67,6 @@ form .field i{
     position: absolute;
     top:50%;
     font-size: 18px;
-    /* pointer-event:none; */
     transform: translateY(-50%);
     margin-right:40px;
 }
@@ -115,7 +112,6 @@ form a[type="Back"]{
 
 button {
     color: white;
-    padding: 14px 20px;
     margin: 8px 0;
     border: none;
     font-size: 18px;
@@ -123,21 +119,21 @@ button {
     border-radius: 8px;    
 } 
 a{
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        font-size: 18px;
-        width: 100%;
-        border-radius: 8px;    
-        text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 8px;    
+    text-decoration: none;   
 } 
 
   
 .Regbtn, .Loginbtn {
     float: left;
     width:50%;
-    padding:12px;
+    padding:10px;
 }
   
 .Loginbtn{
@@ -147,6 +143,13 @@ a{
 .Regbtn {
     background-color: #f44336;
 }  
+.loginpage button:a{
+    color:yellow;
+} 
+
+form a:hover{
+    color:yellow;
+}
 
 /* validation Login page */
 form .field p {

@@ -1,31 +1,76 @@
+let selectedSeats = [];
+let bookedSeats = [];
 
-// const form = document.getElementById('seat');
+function selectSeat(seat) {
+  const errorMessageElement= document.getElementById("error-message");
+
+  if (bookedSeats.includes(seat)) {
+    displayErrorMessage("Seat already booked. Please select another seat.");
+    
+  if (selectedSeats.length < 5 && !selectedSeats.includes(seat)) {
+    selectedSeats.push(seat);
+    document.getElementById(seat).classList.add("selected");
+      clearErrorMessage(); 
+  } else if (selectedSeats.includes(seat)) {
+    selectedSeats.splice(selectedSeats.indexOf(seat), 1);
+    document.getElementById(seat).classList.remove("selected");
+clearErrorMessage();
+  } else {
+    displayErrorMessage("You can select up to 5 seats only");
+  }
+}
+
+function bookSeats(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  if (selectedSeats.length < 2) {
+    displayErrorMessage("Please select at least 2 seats");
+    return false; 
+  } else if (selectedSeats.length > 5) {
+    displayErrorMessage("You can select up to 5 seats only");
+    return false; 
+  } else {
+    window.location.href = "../../invoicing.html";
+  }
+}
+
+function displayErrorMessage(message) {
+  const errorMessageElement = document.getElementById("error-message");
+  errorMessageElement.textContent = message;
+}
+function clearErrorMessage() {
+  const errorMessageElement = document.getElementById("error-message");
+  errorMessageElement.textContent = "";
+}
+}
 
 
-// // Check if more than six seats are selected
-// function selectSeat(){
-// if (selectedSeats > 6) {
- 
-//     alert('You can only select a maximum of six seats at a time.');
+
+
+// let selectedSeats = [];
+
+
+// function selectSeat(seat) {
+//   if (selectedSeats.length < 5 && !selectedSeats.includes(seat)) {
+//     selectedSeats.push(seat);
+//     document.getElementById(seat).classList.add("selected");
+//   } else if(selectedSeats.includes(seat)) {
+//     selectedSeats.splice(selectedSeats.indexOf(seat), 1);
+//     document.getElementById(seat).classList.remove("selected");
 //   }
 // }
 
+// function bookSeats() {
+//   if (selectedSeats.length < 2) {
 
+//     alert("Please select at least 2 seats");
+//     return false;
 
-const radioButtons = document.querySelectorAll('input[type="radio"]');
+//   } else if (selectedSeats.length > 5) {
+//     alert("You can select up to 5 seats only");
 
-for (const radioButton of radioButtons) {
-  radioButton.addEventListener('change', (event) => {
-    const selectedSeats = document.querySelectorAll('input[type="radio"]:checked').length;
-    if (selectedSeats < 2) {
-      radioButton.disabled = true;
-      alert('Please select at least 2 seats.');
-    } else if (selectedSeats > 6) {
-      radioButton.disabled = true;
-      alert('Please select no more than 6 seats.');
-    } else {
-      radioButton.disabled = false;
-      alert.hide();
-    }
-  });
-}
+//   } else {
+//     // book the selected seats
+//     window.location.href="../invoicing.html";
+//   }
+// }
